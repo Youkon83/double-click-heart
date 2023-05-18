@@ -5,9 +5,12 @@
 }
 body{
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
     text-align: center;  
     overflow: hidden;
     margin: 0;
+    position: relative;
 }
 
 h3{
@@ -25,8 +28,30 @@ small{
     color: red;
 }
 
+.btn{
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    top: 88vh;
+    right: 56vw;
+    font-size: 16px;
+}
+
+.btn .fa-heart{
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn.active .fa-heart {
+    color: red;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 .loveMe{
-    height: 440px;
+    height: 350px;
     width: 300px;
     background: url('https://images.unsplash.com/photo-1681317474675-494bd8e91d7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
     margin: auto;
@@ -42,10 +67,29 @@ small{
     transform: translate(-50%, -50%) scale(0);
 }
 
+.new{
+    height: 350px;
+    width: 300px;
+    background: url('https://images.unsplash.com/photo-1575407271714-bea14dd89953?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=804&q=80') no-repeat center center/cover;
+    margin: auto;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.new .fa-heart{
+    position: absolute;
+    animation: grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
 @keyframes grow{
     to {
         transform: translate(-50%, -50%) scale(10);
         opacity: 0;
     }
 }
+
+
 
