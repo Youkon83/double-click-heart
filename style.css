@@ -28,25 +28,26 @@ small{
     color: red;
 }
 
+.test{
+    position: relative;
+    margin: auto;
+}
 .btn{
     background-color: transparent;
     width: 40px;
     height: 40px;
     border: none;
     position: absolute;
-    top: 88vh;
-    right: 56vw;
+    right: 5.5vw;
     font-size: 16px;
 }
 
 .btn .fa-heart{
     color: black;
-    margin-top: 20px;
     cursor: pointer;
 }
 .btn.active .fa-heart {
     color: red;
-    margin-top: 20px;
     cursor: pointer;
 }
 
@@ -76,6 +77,7 @@ small{
     max-width: 100%;
     position: relative;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 20px 20px;
 }
 
 .new .fa-heart{
